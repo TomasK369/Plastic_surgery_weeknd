@@ -1,20 +1,55 @@
+:root {
+    --ff: 'Courier New', Courier, monospace;
+    --odzadje: #25274d;
+    --pisava1: #fff;
+    /* --pisava2: #474b4f;
+    --pisava3: #6b6e70;
+    --pisava4: #86c232;
+    --pisava5: #61892f; */
+
+    --pisava2: #464866;
+    --pisava3: #6b6e70;
+    --pisava4: #2e9cca;
+    --pisava5: #29648a;
+    --h1:   font-weight: bold;
+            font-size: 64px;
+            line-height:72px;
+            font-family: var(--ff);
+    --p:   font-weight: none;
+           font-size: 18px;
+           line-height:30px;
+           font-family: var(--ff);
+}
+
 body {
-    background-color: #112431;
-    font-family:'Courier New', Courier, monospace;
+    background-color: var(--odzadje);
+    font-family: var(--ff);
     /* overflow-wrap:normal; */
 }
 
 h1 {
-    -webkit-text-stroke: 1px rgb(255, 230, 0);
+    color: var(--pisava1);
+}
+
+p {
+    color: var(--pisava4);
+}
+
+.levo {
+    float: left;
+    margin: 30px 80px 0 50px;
+    position: sticky;
+    top: 0;
 }
 
 .levo1 {
     display: block;
-    background-color: rgb(47, 58, 94);
+    background-color: var(--pisava2);
     width: 330px;
     height: 500px;
     border-radius: 50px;
-    border: #ffc403 solid;
+    border: var(--pisava4) solid;
+    box-shadow: 0px 0px 30px #000000;
 }
 
 .moja-slika img {
@@ -23,31 +58,31 @@ h1 {
     max-width: 250px;
     object-fit: cover;
     border-radius: 50px;
-
+    box-shadow: inset 0px 0px 30px 10px #000000;
 }
 
 .moja-slika {
     display: block;
-    background-color: beige;
+    background-color: var(--pisava1);
     width: 250px;
     height: 250px;
     border-radius: 50px;
-    border: solid #ffc403 3px;
+    border: solid var(--pisava4) 3px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
 
 .levo1 p {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: larger;
-    color: rgb(203, 209, 209);
+    color: var(--pisava1);
     text-align: center;
 }
 
 .levo1 h1 {
     font-weight: bold;
-    color: rgb(5, 5, 7);
+    color: var(--pisava1);
     text-align: center;
 }
 
@@ -80,12 +115,7 @@ li a:hover {
     /*tukaj lahko dodaš kasneje da se samo text poveča ko hoveraš*/
 }
 
-.levo {
-    float: left;
-    margin: 30px 80px 0 50px;
-    position: sticky;
-    top: 0;
-}
+
 
 .main {
     display: flex;
@@ -93,7 +123,7 @@ li a:hover {
     flex-wrap: nowrap;
     justify-content: center;
     text-align: center;
-    margin: 60px;
+    margin: 100px;
     gap: 60px;
     padding: 0px 100px;
 
@@ -124,11 +154,14 @@ li a:hover {
 
 .slike-projektov img {
     width: 100%;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
+    
 }
 
 .slike-projektov img:hover {
     transform: scale(1.2);
+    box-shadow: 0px 0px 30px #000000;
+    border-radius: 10px;
 }
 
 .exp {
