@@ -2,11 +2,6 @@
     --ff: "Poppins", "Poppins Placeholder", sans-serif;
     --odzadje: #25274d;
     --pisava1: #fff;
-    /* --pisava2: #474b4f;
-    --pisava3: #6b6e70;
-    --pisava4: #86c232;
-    --pisava5: #61892f; */
-
     --pisava2: #464866ec;
     --pisava3: #6b6e70;
     --pisava4: #2e9cca;
@@ -36,12 +31,61 @@ body {
 }
 
 header {
+    height: 50px;
     display: flex;
     justify-content: center;
-    padding: 0;
-    margin: 0;
     /* border: #ff0000 solid; */
 }
+
+.options {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    border: #2e9bcacb solid;
+    background-color: var(--pisava2);
+}
+
+.ikone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+    filter: invert(46%) sepia(48%) saturate(994%) hue-rotate(150deg) brightness(101%) contrast(106%);   
+    /* border: #000000 solid; */
+
+
+        position: relative;
+        display: inline-block;
+
+      
+} 
+
+.ikone .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
 h1 {
     color: var(--pisava1);
@@ -238,18 +282,23 @@ li a:hover {
     background-color: transparent;
     border-radius: 20px;
     color: var(--pisava1);
-    text-shadow: 7px 12px 7px black;
+    text-shadow: 15px 20px 9px black;
 }
 
 .future a:hover {
     display: block;
     color: #ffc403;
     font-weight: bold;
-    font-size: larger;
-    text-shadow: 15px 20px 9px black;
+    transform: scale(0.9);
+    text-shadow: 7px 12px 7px black;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #456794;
+    border-radius: 100px 100px 10px 10px;
 }
+
